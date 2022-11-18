@@ -20,7 +20,6 @@
                                         <th>Name</th>
                                         <th>Town</th>
                                         <th>Telephone</th>
-                                        <th>Email</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
@@ -28,10 +27,10 @@
                                 @foreach($user as $item)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $item->name }}</td>
+                                        <td>{{ $item->full_name }}</td>
                                         <td>{{ $item->Town }}</td>
                                         <td>{{ $item->tp_no }}</td>
-                                        <td>{{ $item->email }}</td>
+
 
                                         <td>
                                             <a href="{{ url('/user/' . $item->id) }}" title="View Student"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>

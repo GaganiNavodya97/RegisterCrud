@@ -14,8 +14,8 @@ use App\Http\Controllers\UserRegController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/user', function () {
+    return view('user.index');
 });
 
 Route::resource('/user',UserRegController::class);

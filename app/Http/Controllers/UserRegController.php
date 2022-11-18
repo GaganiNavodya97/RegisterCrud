@@ -38,7 +38,7 @@ class UserRegController extends Controller
     {
         $input = $request->all();
         UserReg::create($input);
-        return redirect('user')->with('flash_message', 'User Addedd!');
+        return redirect('/user')->with('flash_message', 'User Addedd!');
     }
 
     /**
@@ -49,7 +49,7 @@ class UserRegController extends Controller
      */
     public function show($id)
     {
-        $user = Contact::find($id);
+        $user = UserReg::find($id);
         return view('user.show')->with('user', $user);
     }
 

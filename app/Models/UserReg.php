@@ -9,6 +9,6 @@ class UserReg extends Model
 {
     protected $table = 'user';
     protected $primarykey ='id';
-    protected $fillable =['full_name', 'Town', 'tp_no','email' ];
-    
+    protected $fillable =['full_name', 'Town', 'tp_no',];
+
 }
